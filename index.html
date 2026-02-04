@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python: Кірістірілген шарттар | 7-сынып | Раухат Ағай</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <span class="logo-icon">🐍</span>
+          <span class="logo-text">Python Сабағы</span>
+        </div>
+        <nav class="nav" id="nav">
+          <a href="#theory">📚 Теория</a>
+          <a href="#examples">💡 Мысалдар</a>
+          <a href="#tasks">✏️ Тапсырмалар</a>
+          <a href="#results">🏆 Нәтиже</a>
+        </nav>
+        <div class="teacher-badge">
+          <span class="teacher-avatar">👨‍🏫</span>
+          <span class="teacher-name">Раухат Ағай</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1">if</div>
+        <div class="shape shape-2">elif</div>
+        <div class="shape shape-3">else</div>
+        <div class="shape shape-4">True</div>
+        <div class="shape shape-5">False</div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">7-СЫНЫП • ИНФОРМАТИКА</div>
+        <h1 class="hero-title">
+          <span class="title-line">Кірістірілген</span>
+          <span class="title-line highlight">шарттар</span>
+        </h1>
+        <p class="hero-subtitle">
+          Python тілінде кірістірілген шарт операторларын меңгеріп, күрделі
+          есептерді шешуді үйренейік!
+        </p>
+        <div class="hero-buttons">
+          <a href="#theory" class="btn btn-primary">
+            <span>Бастайық!</span>
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="#tasks" class="btn btn-secondary">Тапсырмаларға өту</a>
+        </div>
+      </div>
+      <div class="hero-mascot">
+        <div class="mascot-body">
+          <div class="mascot-eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          <div class="mascot-smile"></div>
+        </div>
+        <div class="mascot-speech">Шарттарды үйренейік! 🎯</div>
+      </div>
+    </section>
+
+    <!-- ========== THEORY SECTION ========== -->
+    <section id="theory" class="theory">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">📚 ТЕОРИЯ</span>
+          <h2 class="section-title">Кірістірілген шарттар дегеніміз не?</h2>
+          <p class="section-subtitle">
+            Бір шарттың ішінде тағы бір шарт қоюға болады!
+          </p>
+        </div>
+
+        <div class="intro-card">
+          <div class="intro-icon">🤔</div>
+          <div class="intro-content">
+            <h3>Елестетіп көріңіз!</h3>
+            <p>
+              Сіз дүкенге барасыз. Алдымен: <strong>"Ақша бар ма?"</strong> -
+              деп тексересіз. Егер бар болса, сосын:
+              <strong>"Не алайын?"</strong> - деп ойлайсыз. Мұны
+              <strong>кірістірілген шарттар</strong> деп атайды - бір шарттың
+              ішінде тағы бір шарт!
+            </p>
+          </div>
+        </div>
+
+        <!-- Simple IF -->
+        <div class="concept-card">
+          <div class="concept-header if-color">
+            <div class="concept-icon">🚦</div>
+            <h3>Қарапайым if операторы</h3>
+          </div>
+          <div class="concept-body">
+            <p>
+              Шартты оператор белгілі бір шарт орындалғанда ғана кодты
+              орындайды.
+            </p>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-filename">if_example.py</span>
+              </div>
+              <pre><code><span class="keyword">age</span> = <span class="number">15</span>
+
+<span class="control">if</span> age >= <span class="number">18</span>:
+    <span class="function">print</span>(<span class="string">"Сіз ересексіз!"</span>)
+<span class="control">else</span>:
+    <span class="function">print</span>(<span class="string">"Сіз балаcыз!"</span>)</code></pre>
+            </div>
+            <div class="output-preview">
+              <span class="output-label">Нәтиже:</span>
+              <span class="output-text">Сіз балаcыз!</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nested IF -->
+        <div class="concept-card featured">
+          <div class="concept-header nested-color">
+            <div class="concept-icon">🎯</div>
+            <h3>Кірістірілген шарттар (Nested if)</h3>
+            <span class="concept-badge">НЕГІЗГІ ТАҚЫРЫП</span>
+          </div>
+          <div class="concept-body">
+            <p>
+              <strong>Кірістірілген шарт</strong> - бұл бір
+              <code>if</code> операторының ішінде тағы бір
+              <code>if</code> операторы орналасуы.
+            </p>
+
+            <div class="visual-diagram">
+              <div class="diagram-title">Кірістірілген шарттың құрылымы:</div>
+              <div class="diagram-box outer">
+                <span class="diagram-label">Сыртқы if</span>
+                <div class="diagram-box inner">
+                  <span class="diagram-label">Ішкі if</span>
+                  <div class="diagram-action">Код орындалады</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-filename">nested_if.py</span>
+              </div>
+              <pre><code><span class="keyword">age</span> = <span class="number">16</span>
+<span class="keyword">has_ticket</span> = <span class="boolean">True</span>
+
+<span class="control">if</span> age >= <span class="number">12</span>:                      <span class="comment"># Сыртқы шарт</span>
+    <span class="function">print</span>(<span class="string">"Жасы жарайды!"</span>)
+    <span class="control">if</span> has_ticket:                 <span class="comment"># Ішкі шарт</span>
+        <span class="function">print</span>(<span class="string">"Кинога кіре аласыз!"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Билет сатып алыңыз!"</span>)
+<span class="control">else</span>:
+    <span class="function">print</span>(<span class="string">"Жасыңыз жетпейді!"</span>)</code></pre>
+            </div>
+            <div class="output-preview success">
+              <span class="output-label">Нәтиже:</span>
+              <div class="output-text">
+                Жасы жарайды!<br />Кинога кіре аласыз!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- elif -->
+        <div class="concept-card">
+          <div class="concept-header elif-color">
+            <div class="concept-icon">📊</div>
+            <h3>elif операторы</h3>
+          </div>
+          <div class="concept-body">
+            <p>
+              <code>elif</code> - "else if" дегенді білдіреді. Бірнеше шартты
+              тексеруге мүмкіндік береді.
+            </p>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-filename">elif_example.py</span>
+              </div>
+              <pre><code><span class="keyword">ball</span> = <span class="number">75</span>
+
+<span class="control">if</span> ball >= <span class="number">90</span>:
+    <span class="function">print</span>(<span class="string">"Өте жақсы! Баға: 5"</span>)
+<span class="control">elif</span> ball >= <span class="number">70</span>:
+    <span class="function">print</span>(<span class="string">"Жақсы! Баға: 4"</span>)
+<span class="control">elif</span> ball >= <span class="number">50</span>:
+    <span class="function">print</span>(<span class="string">"Қанағаттанарлық. Баға: 3"</span>)
+<span class="control">else</span>:
+    <span class="function">print</span>(<span class="string">"Қайта тапсыру керек"</span>)</code></pre>
+            </div>
+            <div class="output-preview">
+              <span class="output-label">Нәтиже:</span>
+              <span class="output-text">Жақсы! Баға: 4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparison Operators -->
+        <div class="operators-card">
+          <h3>🔧 Салыстыру операторлары</h3>
+          <div class="operators-grid">
+            <div class="operator-item">
+              <code>==</code>
+              <span>тең</span>
+            </div>
+            <div class="operator-item">
+              <code>!=</code>
+              <span>тең емес</span>
+            </div>
+            <div class="operator-item">
+              <code>></code>
+              <span>үлкен</span>
+            </div>
+            <div class="operator-item">
+              <code><</code>
+              <span>кіші</span>
+            </div>
+            <div class="operator-item">
+              <code>>=</code>
+              <span>үлкен немесе тең</span>
+            </div>
+            <div class="operator-item">
+              <code><=</code>
+              <span>кіші немесе тең</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logical Operators -->
+        <div class="operators-card logical">
+          <h3>🧠 Логикалық операторлар</h3>
+          <div class="operators-grid">
+            <div class="operator-item wide">
+              <code>and</code>
+              <span>ЖӘНЕ - екі шарт та True болуы керек</span>
+            </div>
+            <div class="operator-item wide">
+              <code>or</code>
+              <span>НЕМЕСЕ - кем дегенде бір шарт True болуы керек</span>
+            </div>
+            <div class="operator-item wide">
+              <code>not</code>
+              <span>ЕМЕС - шартты керісінше өзгертеді</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Important Rules -->
+        <div class="rules-card">
+          <h3>⚠️ Маңызды ережелер</h3>
+          <ul class="rules-list">
+            <li>
+              <span class="rule-icon">1️⃣</span>
+              <span
+                ><strong>Шегініс (indentation)</strong> - кірістірілген кодта 4
+                бос орын немесе 1 Tab қолданыңыз!</span
+              >
+            </li>
+            <li>
+              <span class="rule-icon">2️⃣</span>
+              <span
+                ><strong>Қос нүкте (:)</strong> - if, elif, else-ден кейін
+                міндетті түрде қойылады!</span
+              >
+            </li>
+            <li>
+              <span class="rule-icon">3️⃣</span>
+              <span
+                ><strong>Тәртіп</strong> - алдымен if, сосын elif (қанша болса
+                да), ең соңында else!</span
+              >
+            </li>
+            <li>
+              <span class="rule-icon">4️⃣</span>
+              <span
+                ><strong>Салыстыру</strong> - тең екенін тексеру үшін == (екі
+                тең белгісі) қолданыңыз!</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXAMPLES SECTION ========== -->
+    <section id="examples" class="examples">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">💡 МЫСАЛДАР</span>
+          <h2 class="section-title">Практикалық мысалдар</h2>
+          <p class="section-subtitle">
+            Түрлі жағдайларда кірістірілген шарттарды қолдану
+          </p>
+        </div>
+
+        <div class="interactive-demo">
+          <div class="demo-tabs">
+            <button class="demo-tab active" data-tab="cinema">🎬 Кино</button>
+            <button class="demo-tab" data-tab="grades">📝 Бағалау</button>
+            <button class="demo-tab" data-tab="weather">🌤️ Ауа райы</button>
+            <button class="demo-tab" data-tab="game">🎮 Ойын</button>
+          </div>
+
+          <div class="demo-content">
+            <!-- Cinema Example -->
+            <div class="demo-panel active" id="panel-cinema">
+              <div class="demo-code">
+                <h4>💻 Код: Кинотеатрға кіру</h4>
+                <pre><code><span class="keyword">age</span> = <span class="number">14</span>
+<span class="keyword">has_money</span> = <span class="boolean">True</span>
+<span class="keyword">has_parent</span> = <span class="boolean">False</span>
+
+<span class="control">if</span> age >= <span class="number">18</span>:
+    <span class="function">print</span>(<span class="string">"Кез келген фильмге кіре аласыз!"</span>)
+<span class="control">elif</span> age >= <span class="number">12</span>:
+    <span class="control">if</span> has_money:
+        <span class="function">print</span>(<span class="string">"12+ фильмдерге кіре аласыз!"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Ақша керек!"</span>)
+<span class="control">else</span>:
+    <span class="control">if</span> has_parent:
+        <span class="function">print</span>(<span class="string">"Ата-анамен кіре аласыз!"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Ата-анаңызбен келіңіз!"</span>)</code></pre>
+              </div>
+              <div class="demo-output">
+                <h4>📤 Нәтиже:</h4>
+                <div class="output-box">
+                  <p>12+ фильмдерге кіре аласыз!</p>
+                </div>
+                <div class="demo-explanation">
+                  <strong>Түсініктеме:</strong> Жасы 14 (12-18 аралығында),
+                  ақшасы бар, сондықтан кіре алады!
+                </div>
+              </div>
+            </div>
+
+            <!-- Grades Example -->
+            <div class="demo-panel" id="panel-grades">
+              <div class="demo-code">
+                <h4>💻 Код: Бағаны анықтау</h4>
+                <pre><code><span class="keyword">ball</span> = <span class="number">85</span>
+<span class="keyword">homework</span> = <span class="boolean">True</span>
+
+<span class="control">if</span> ball >= <span class="number">90</span>:
+    <span class="control">if</span> homework:
+        <span class="function">print</span>(<span class="string">"Баға: 5 (Керемет!)"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Баға: 5 (Үй тапсырмасын тапсырыңыз)"</span>)
+<span class="control">elif</span> ball >= <span class="number">70</span>:
+    <span class="control">if</span> homework:
+        <span class="function">print</span>(<span class="string">"Баға: 4 (Жақсы!)"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Баға: 4- (ҮТ жоқ)"</span>)
+<span class="control">elif</span> ball >= <span class="number">50</span>:
+    <span class="function">print</span>(<span class="string">"Баға: 3"</span>)
+<span class="control">else</span>:
+    <span class="function">print</span>(<span class="string">"Баға: 2 (Қайта тапсыр)"</span>)</code></pre>
+              </div>
+              <div class="demo-output">
+                <h4>📤 Нәтиже:</h4>
+                <div class="output-box">
+                  <p>Баға: 4 (Жақсы!)</p>
+                </div>
+                <div class="demo-explanation">
+                  <strong>Түсініктеме:</strong> 85 балл 70-ден жоғары, бірақ
+                  90-нан төмен. Үй тапсырмасы бар, сондықтан "Жақсы!"
+                </div>
+              </div>
+            </div>
+
+            <!-- Weather Example -->
+            <div class="demo-panel" id="panel-weather">
+              <div class="demo-code">
+                <h4>💻 Код: Ауа райы бойынша кеңес</h4>
+                <pre><code><span class="keyword">temp</span> = <span class="number">25</span>
+<span class="keyword">is_raining</span> = <span class="boolean">False</span>
+
+<span class="control">if</span> temp >= <span class="number">20</span>:
+    <span class="function">print</span>(<span class="string">"Жылы күн!"</span>)
+    <span class="control">if</span> is_raining:
+        <span class="function">print</span>(<span class="string">"Қолшатыр алыңыз!"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Серуенге шығуға болады!"</span>)
+<span class="control">elif</span> temp >= <span class="number">10</span>:
+    <span class="function">print</span>(<span class="string">"Салқын күн, жылы киініңіз!"</span>)
+<span class="control">else</span>:
+    <span class="function">print</span>(<span class="string">"Суық! Үйде отырыңыз!"</span>)
+    <span class="control">if</span> temp < <span class="number">0</span>:
+        <span class="function">print</span>(<span class="string">"Аяз бар, абай болыңыз!"</span>)</code></pre>
+              </div>
+              <div class="demo-output">
+                <h4>📤 Нәтиже:</h4>
+                <div class="output-box">
+                  <p>Жылы күн!</p>
+                  <p>Серуенге шығуға болады!</p>
+                </div>
+                <div class="demo-explanation">
+                  <strong>Түсініктеме:</strong> Температура 25°C (20-дан
+                  жоғары), жаңбыр жоқ - серуенге шығуға болады!
+                </div>
+              </div>
+            </div>
+
+            <!-- Game Example -->
+            <div class="demo-panel" id="panel-game">
+              <div class="demo-code">
+                <h4>💻 Код: Ойын деңгейі</h4>
+                <pre><code><span class="keyword">level</span> = <span class="number">5</span>
+<span class="keyword">has_key</span> = <span class="boolean">True</span>
+<span class="keyword">has_sword</span> = <span class="boolean">False</span>
+
+<span class="control">if</span> level >= <span class="number">10</span>:
+    <span class="function">print</span>(<span class="string">"Финалдық босқа кіре аласыз!"</span>)
+<span class="control">elif</span> level >= <span class="number">5</span>:
+    <span class="function">print</span>(<span class="string">"Қараңғы орманға кірдіңіз!"</span>)
+    <span class="control">if</span> has_key <span class="operator">and</span> has_sword:
+        <span class="function">print</span>(<span class="string">"Жасырын бөлмеге кіре аласыз!"</span>)
+    <span class="control">elif</span> has_key:
+        <span class="function">print</span>(<span class="string">"Есікті ашуға болады, бірақ қару керек!"</span>)
+    <span class="control">else</span>:
+        <span class="function">print</span>(<span class="string">"Кілт табу керек!"</span>)
+<span class="control">else</span>:
+    <span class="function">print</span>(<span class="string">"Деңгейіңіз төмен!"</span>)</code></pre>
+              </div>
+              <div class="demo-output">
+                <h4>📤 Нәтиже:</h4>
+                <div class="output-box">
+                  <p>Қараңғы орманға кірдіңіз!</p>
+                  <p>Есікті ашуға болады, бірақ қару керек!</p>
+                </div>
+                <div class="demo-explanation">
+                  <strong>Түсініктеме:</strong> Деңгей 5, кілт бар, бірақ қылыш
+                  жоқ. Сондықтан есікті ашады, бірақ жасырын бөлмеге кіре
+                  алмайды!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TASKS SECTION ========== -->
+    <section id="tasks" class="tasks">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">✏️ ТАПСЫРМАЛАР</span>
+          <h2 class="section-title">Білімді тексеру</h2>
+          <p class="section-subtitle">Барлығы 5 тапсырма • Жалпы 10 балл</p>
+        </div>
+
+        <div class="score-panel">
+          <div class="score-display">
+            <span class="score-label">Жалпы балл:</span>
+            <span class="score-value" id="totalScore">0</span>
+            <span class="score-max">/ 10</span>
+          </div>
+          <button class="btn btn-reset" id="resetBtn">🔄 Қайта бастау</button>
+        </div>
+
+        <div class="tasks-container">
+          <!-- TASK 1: Fill in the blanks -->
+          <div class="task-card" id="task1">
+            <div class="task-header">
+              <div class="task-number">1</div>
+              <div class="task-info">
+                <h3>Бос орындарды толтырыңыз</h3>
+                <span class="task-points">2 балл</span>
+              </div>
+              <span class="task-status" id="status1"></span>
+            </div>
+            <div class="task-body">
+              <p class="task-question">
+                Код дұрыс жұмыс істеуі үшін бос орындарға сәйкес сөздерді
+                жазыңыз:
+              </p>
+
+              <div class="code-fill-task">
+                <div class="code-line">
+                  <span class="line-number">1</span>
+                  <span>age = 15</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-number">2</span>
+                  <span
+                    ><input
+                      type="text"
+                      class="code-input"
+                      id="blank1"
+                      placeholder="___"
+                      data-correct="if"
+                    />
+                    age >= 18:</span
+                  >
+                </div>
+                <div class="code-line indent">
+                  <span class="line-number">3</span>
+                  <span>print("Ересексіз")</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-number">4</span>
+                  <span
+                    ><input
+                      type="text"
+                      class="code-input"
+                      id="blank2"
+                      placeholder="___"
+                      data-correct="elif"
+                    />
+                    age >= 12:</span
+                  >
+                </div>
+                <div class="code-line indent">
+                  <span class="line-number">5</span>
+                  <span>print("Жасөспірімсіз")</span>
+                </div>
+                <div class="code-line">
+                  <span class="line-number">6</span>
+                  <span
+                    ><input
+                      type="text"
+                      class="code-input"
+                      id="blank3"
+                      placeholder="___"
+                      data-correct="else"
+                    />:</span
+                  >
+                </div>
+                <div class="code-line indent">
+                  <span class="line-number">7</span>
+                  <span>print("Баласыз")</span>
+                </div>
+              </div>
+
+              <div class="task-descriptor">
+                <strong>Дескриптор:</strong>
+                <ul>
+                  <li>if операторын дұрыс жазды - 0.5 балл</li>
+                  <li>elif операторын дұрыс жазды - 0.5 балл</li>
+                  <li>else операторын дұрыс жазды - 0.5 балл</li>
+                  <li>Барлығы дұрыс - +0.5 балл</li>
+                </ul>
+              </div>
+
+              <div class="task-actions">
+                <button class="btn btn-check" onclick="checkTask1()">
+                  Тексеру
+                </button>
+                <span class="task-score" id="score1">-</span>
+              </div>
+              <div class="task-feedback" id="feedback1"></div>
+            </div>
+          </div>
+
+          <!-- TASK 2: Find the output -->
+          <div class="task-card" id="task2">
+            <div class="task-header">
+              <div class="task-number">2</div>
+              <div class="task-info">
+                <h3>Нәтижені анықтаңыз</h3>
+                <span class="task-points">2 балл</span>
+              </div>
+              <span class="task-status" id="status2"></span>
+            </div>
+            <div class="task-body">
+              <p class="task-question">Берілген код қандай нәтиже береді?</p>
+
+              <div class="code-block small">
+                <pre><code>x = 10
+y = 5
+
+if x > y:
+    if x > 15:
+        print("A")
+    else:
+        print("B")
+else:
+    print("C")</code></pre>
+              </div>
+
+              <div class="answer-input">
+                <label for="answer2">Нәтиже:</label>
+                <input
+                  type="text"
+                  id="answer2"
+                  placeholder="Экранға не шығады?"
+                />
+              </div>
+
+              <div class="task-descriptor">
+                <strong>Дескриптор:</strong>
+                <ul>
+                  <li>Сыртқы шартты дұрыс талдады - 1 балл</li>
+                  <li>Ішкі шартты дұрыс талдады - 1 балл</li>
+                </ul>
+              </div>
+
+              <div class="task-actions">
+                <button class="btn btn-check" onclick="checkTask2()">
+                  Тексеру
+                </button>
+                <span class="task-score" id="score2">-</span>
+              </div>
+              <div class="task-feedback" id="feedback2"></div>
+            </div>
+          </div>
+
+          <!-- TASK 3: Fix the code -->
+          <div class="task-card" id="task3">
+            <div class="task-header">
+              <div class="task-number">3</div>
+              <div class="task-info">
+                <h3>Кодтағы қателерді түзетіңіз</h3>
+                <span class="task-points">2 балл</span>
+              </div>
+              <span class="task-status" id="status3"></span>
+            </div>
+            <div class="task-body">
+              <p class="task-question">
+                Бұл кодта 2 қате бар. Дұрыс нұсқасын жазыңыз:
+              </p>
+
+              <div class="code-block small error-code">
+                <pre><code>ball = 85
+
+if ball >= 90
+    print("5")
+elif ball >= 70:
+print("4")</code></pre>
+              </div>
+
+              <div class="code-editor">
+                <label for="code3">Түзетілген код:</label>
+                <textarea
+                  id="code3"
+                  rows="6"
+                  placeholder="Дұрыс кодты осында жазыңыз..."
+                ></textarea>
+              </div>
+
+              <div class="task-descriptor">
+                <strong>Дескриптор:</strong>
+                <ul>
+                  <li>Қос нүктені (:) қосты - 1 балл</li>
+                  <li>Шегіністі (indent) дұрыс қойды - 1 балл</li>
+                </ul>
+              </div>
+
+              <div class="task-actions">
+                <button class="btn btn-check" onclick="checkTask3()">
+                  Тексеру
+                </button>
+                <span class="task-score" id="score3">-</span>
+              </div>
+              <div class="task-feedback" id="feedback3"></div>
+            </div>
+          </div>
+
+          <!-- TASK 4: True/False -->
+          <div class="task-card" id="task4">
+            <div class="task-header">
+              <div class="task-number">4</div>
+              <div class="task-info">
+                <h3>Дұрыс па, Бұрыс па?</h3>
+                <span class="task-points">2 балл</span>
+              </div>
+              <span class="task-status" id="status4"></span>
+            </div>
+            <div class="task-body">
+              <p class="task-question">Әр сөйлем дұрыс па, бұрыс па?</p>
+
+              <div class="tf-questions">
+                <div class="tf-item">
+                  <span class="tf-text"
+                    >1. Кірістірілген шартта шегініс (indent) маңызды емес</span
+                  >
+                  <div class="tf-buttons" data-question="1">
+                    <button class="tf-btn" data-value="true">Дұрыс</button>
+                    <button class="tf-btn" data-value="false">Бұрыс</button>
+                  </div>
+                </div>
+                <div class="tf-item">
+                  <span class="tf-text"
+                    >2. elif операторын бірнеше рет қолдануға болады</span
+                  >
+                  <div class="tf-buttons" data-question="2">
+                    <button class="tf-btn" data-value="true">Дұрыс</button>
+                    <button class="tf-btn" data-value="false">Бұрыс</button>
+                  </div>
+                </div>
+                <div class="tf-item">
+                  <span class="tf-text"
+                    >3. if операторынан кейін міндетті түрде else болуы
+                    керек</span
+                  >
+                  <div class="tf-buttons" data-question="3">
+                    <button class="tf-btn" data-value="true">Дұрыс</button>
+                    <button class="tf-btn" data-value="false">Бұрыс</button>
+                  </div>
+                </div>
+                <div class="tf-item">
+                  <span class="tf-text"
+                    >4. "and" операторында екі шарт та True болуы керек</span
+                  >
+                  <div class="tf-buttons" data-question="4">
+                    <button class="tf-btn" data-value="true">Дұрыс</button>
+                    <button class="tf-btn" data-value="false">Бұрыс</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task-descriptor">
+                <strong>Дескриптор:</strong>
+                <ul>
+                  <li>Әр дұрыс жауап - 0.5 балл</li>
+                </ul>
+              </div>
+
+              <div class="task-actions">
+                <button class="btn btn-check" onclick="checkTask4()">
+                  Тексеру
+                </button>
+                <span class="task-score" id="score4">-</span>
+              </div>
+              <div class="task-feedback" id="feedback4"></div>
+            </div>
+          </div>
+
+          <!-- TASK 5: Write code -->
+          <div class="task-card" id="task5">
+            <div class="task-header">
+              <div class="task-number">5</div>
+              <div class="task-info">
+                <h3>Код жазыңыз</h3>
+                <span class="task-points">2 балл</span>
+              </div>
+              <span class="task-status" id="status5"></span>
+            </div>
+            <div class="task-body">
+              <p class="task-question">
+                Кірістірілген шарттарды қолданып, келесі есепті шешіңіз:
+              </p>
+
+              <div class="task-problem">
+                <strong>Есеп:</strong> Оқушының жасы мен балын енгізіп, келесі
+                жағдайларды тексеріңіз:
+                <ul>
+                  <li>
+                    Егер жасы 18-ден кіші болса және балы 70-тен жоғары болса:
+                    "Жастар олимпиадасына қатыса аласыз!"
+                  </li>
+                  <li>
+                    Егер жасы 18-ден кіші болса және балы 70-тен төмен болса:
+                    "Балыңызды көтеріңіз!"
+                  </li>
+                  <li>Егер жасы 18-ден үлкен болса: "Жасыңыз өтіп кетті!"</li>
+                </ul>
+              </div>
+
+              <div class="code-editor">
+                <label for="code5">Сіздің кодыңыз:</label>
+                <textarea
+                  id="code5"
+                  rows="10"
+                  placeholder="# Осында кодты жазыңыз
+age = 16
+ball = 85
+
+# if операторын қолданыңыз..."
+                ></textarea>
+              </div>
+
+              <div class="task-descriptor">
+                <strong>Дескриптор:</strong>
+                <ul>
+                  <li>Айнымалыларды дұрыс құрды (age, ball) - 0.5 балл</li>
+                  <li>Сыртқы if шартын дұрыс жазды - 0.5 балл</li>
+                  <li>Кірістірілген if шартын қолданды - 0.5 балл</li>
+                  <li>print() функциясын дұрыс қолданды - 0.5 балл</li>
+                </ul>
+              </div>
+
+              <div class="task-actions">
+                <button class="btn btn-check" onclick="checkTask5()">
+                  Тексеру
+                </button>
+                <span class="task-score" id="score5">-</span>
+              </div>
+              <div class="task-feedback" id="feedback5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESULTS SECTION ========== -->
+    <section id="results" class="results">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">🏆 НӘТИЖЕ</span>
+          <h2 class="section-title">Сіздің жетістігіңіз</h2>
+        </div>
+
+        <div class="results-card">
+          <div class="result-circle">
+            <svg viewBox="0 0 200 200">
+              <circle
+                cx="100"
+                cy="100"
+                r="85"
+                fill="none"
+                stroke="#e0e0e0"
+                stroke-width="15"
+              />
+              <circle
+                cx="100"
+                cy="100"
+                r="85"
+                fill="none"
+                stroke="var(--color-primary)"
+                stroke-width="15"
+                stroke-dasharray="534"
+                stroke-dashoffset="534"
+                stroke-linecap="round"
+                id="progressCircle"
+              />
+            </svg>
+            <div class="result-score">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-text">/ 10 балл</span>
+            </div>
+          </div>
+
+          <div class="result-details">
+            <div class="result-message" id="resultMessage">
+              Тапсырмаларды орындаңыз!
+            </div>
+
+            <div class="result-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">1-тапсырма:</span>
+                <span class="breakdown-score" id="result1">-</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">2-тапсырма:</span>
+                <span class="breakdown-score" id="result2">-</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">3-тапсырма:</span>
+                <span class="breakdown-score" id="result3">-</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">4-тапсырма:</span>
+                <span class="breakdown-score" id="result4">-</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">5-тапсырма:</span>
+                <span class="breakdown-score" id="result5">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="motivation-card">
+          <div class="motivation-icon">💡</div>
+          <div class="motivation-text">
+            <strong>Кеңес:</strong> Кірістірілген шарттарды жақсы меңгеру үшін -
+            көбірек жаттығыңыз! Әр есепті алдымен қағазға жазып, логикасын
+            түсініп алыңыз.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <span class="logo-icon">🐍</span>
+              <span class="logo-text">Python Сабағы</span>
+            </div>
+            <p>7-сынып информатика пәні бойынша интерактивті сабақ</p>
+          </div>
+          <div class="footer-teacher">
+            <span class="teacher-label">Мұғалім:</span>
+            <span class="teacher-name">Раухат Ағай</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Барлық құқықтар қорғалған</p>
+          <p class="footer-note">
+            Тақырып: Кірістірілген шарттарды программалау
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Config Panel (for teachers) -->
+    <div class="config-panel">
+      <button class="config-toggle" id="configToggle">⚙️</button>
+      <div class="config-content" id="configContent">
+        <h4>Мұғалімге</h4>
+        <p>
+          Тапсырмаларды өзгерту үшін <code>script.js</code> файлындағы
+          <code>LESSON_CONFIG</code> объектісін өзгертіңіз.
+        </p>
+        <p>HTML файлында тапсырма мәтіндерін өзгертуге болады.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
